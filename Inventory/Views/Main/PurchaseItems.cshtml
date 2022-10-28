@@ -339,20 +339,20 @@
                         });
                     </script>
                     
-                                        <h2>Item_Stock</h2>
-                                        @*this form only send the invoice no and totalamount to controller to save it the rest is saved through ajax*@
+                                        <h2>Produtos em estouqe</h2>
+                                        @*este formulário apenas envie a fatura no e valor total para o controlador para salvá-lo o resto é salvo através do ajax*@
                     <form method="post" action="Final_Submit_Order">
                         <div class="row">
-                            @*<h3>Order Details</h3>*@
+                            @*<h3>detalhes do pedido</h3>*@
                             <div class="col-sm-3">
-                                <p>Invoice No</p><input type="text" name="invoice_no" value="@foreach (var m in Model.invoice_4m_total) { @m.invoice_no_t}" id="invoice_no" class="form-control" />
+                                <p>Nº da fatura</p><input type="text" name="invoice_no" value="@foreach (var m in Model.invoice_4m_total) { @m.invoice_no_t}" id="invoice_no" class="form-control" />
                             </div>
                             <div class="col-sm-3">
-                                <p>Bill Date</p><input type="date" name="billdate" id="bill_date" class="form-control" />
+                                <p>Data da conta</p><input type="date" name="billdate" id="bill_date" class="form-control" />
                                 @*<input type="text" name="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />*@
                             </div>
                             <div class="col-sm-3">
-                                <p>Total Stock Of Item</p><input type="text"  name="total_stock" id="total_stock" class="form-control" />
+                                <p>Total de Produtos em estouqe</p><input type="text"  name="total_stock" id="total_stock" class="form-control" />
                                 @*<input type="text" name="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />*@
                             </div>
 
@@ -360,7 +360,7 @@
                         </div>
                         <div class="row" style="background-color:">
                             <div class="col-sm-3">
-                                <p>Supplier Name</p>
+                                <p>Nome do Fornecedor</p>
                                 <select class="form-control" autofocus name="supplier_name" id="supplier_name">
                                     @foreach (var sup in Model.supplier_data)
                                     {
@@ -370,10 +370,10 @@
                             </div>
 
                             <div class="col-sm-3">
-                                <p>Carring Charge</p><input type="text" name="carrying_charge" id="carrying_charge" class="form-control" />
+                                <p>Carga de Transporte</p><input type="text" name="carrying_charge" id="carrying_charge" class="form-control" />
                             </div>
                             <div class="col-sm-3">
-                                <p>Receive Date</p><input type="date" name="receiving_date" id="receiving_date" class="form-control" />
+                                <p>Data de Recebimento</p><input type="date" name="receiving_date" id="receiving_date" class="form-control" />
                             </div>
 
                         </div>
@@ -407,9 +407,9 @@
                     }
                         </script>
                         <div class="row">
-                            @*<h3>Order Items</h3>*@
+                            @*<h3>Produtos de ordem</h3>*@
                             <div class="col-sm-3">
-                                <p>Item Name</p>
+                                <p>Nome do Produtos</p>
                                 <select name="item" id="itemname" onchange="find_Item_id()" class="form-control">
                                     @foreach (var it in Model.item_data)
                                     {
@@ -435,10 +435,10 @@
 
                             </script>
                             <div class="col-sm-2">
-                                <p>Quantity</p><input type="text" onkeyup="calculate()" name="quantity" id="quantity" class="form-control" />
+                                <p>Quantidade</p><input type="text" onkeyup="calculate()" name="quantity" id="quantity" class="form-control" />
                             </div>
                             <div class="col-sm-2">
-                                <p>Price </p><input type="text" name="price" id="p" class="form-control" />
+                                <p>Preço </p><input type="text" name="price" id="p" class="form-control" />
 
                             </div>
                             <div class="col-sm-2">
@@ -447,7 +447,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <br /><br />
-                                <button type="button" onclick="show_sum()" style="margin-top:-17px" name="add_stock_item" id="add_stock_item" class="btn btn-success">Add Item</button>
+                                <button type="button" onclick="show_sum()" style="margin-top:-17px" name="add_stock_item" id="add_stock_item" class="btn btn-success">Addicionar Produtos</button>
                             </div>
                         </div>
                         <br />
@@ -455,10 +455,10 @@
                             <table class="table">
                                 <tr style="background-color:#fb6d6d">
                                     <th>sr.no</th>
-                                    <th>Item Name</th>
-                                    <th>Quantity</th>
-                                    <th>Amount</th>
-                                    <th>Action</th>
+                                    <th>Nome do Produtos</th>
+                                    <th>Quantidade</th>
+                                    <th>Quantia</th>
+                                    <th>Aççao</th>
                                 </tr>
                                
 
@@ -514,7 +514,7 @@
                         <div class="row" id="">
                             <div class="col-sm-4"></div>
                             <div class="col-sm-4">
-                                <h3>Total Amount</h3><br /><input type="text" class="form-control" id="sum" style="display:none" name="total_amunt_t" />
+                                <h3>Valor total/h3><br /><input type="text" class="form-control" id="sum" style="display:none" name="total_amunt_t" />
                                 <input type="text" class="form-control" id="carry_charge" style="display:none" name="carry_charge" />
                                 <input type="text" class="form-control" id="dammy_sum" name="total_amount_t" />
                             </div>
@@ -525,7 +525,7 @@
 
                             <div class="col-sm-4"></div>
                             <div class="col-sm-4">
-                                <br /><center><button type="submit" style="width:100%" onclik="save_stock()" class="btn btn-info" id="Save_Stock">Save Stock</button></center>
+                                <br /><center><button type="submit" style="width:100%" onclik="save_stock()" class="btn btn-info" id="Save_Stock">Guardar em esqoue</button></center>
                             </div>
                             <div class="col-sm-4"></div>
                         </div>
@@ -561,16 +561,7 @@
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
                 <footer class="footer">
-                    <div class="container-fluid clearfix">
-                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">
-                            Copyright © 2018
-                            <a href="http://www.surajkrsoren.tk" target="_blank">Suraj kr soren</a>. All rights reserved.
-                        </span>
-                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
-                            Hand-crafted & made with
-                            <i class="mdi mdi-heart text-danger"></i>
-                        </span>
-                    </div>
+           
                 </footer>
                 <!-- partial -->
             </div>
