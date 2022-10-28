@@ -32,7 +32,7 @@ namespace Inventory.Controllers
             }
             else
             {
-                Session["error"] = "Wrong email and password";
+                Session["error"] = "Email ou senha,Estao errdas!";
                 return RedirectToAction("login");
             }
                 
