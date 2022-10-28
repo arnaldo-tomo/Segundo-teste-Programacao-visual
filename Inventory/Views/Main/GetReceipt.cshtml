@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Inventory.Models.MyStock>
+@{
+    Layout = null;
+}
+@Html.ActionLink("Print", "PrintAll");
+<table class="table">
+    <tr>
+        <th>id</th>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+    </tr>
+    @foreach (var v in Model)
+    {
+        <tr>
+            <td>@v.id</td>
+            <td>@v.item_name</td>
+            <td>@v.quantity</td>
+            <td>@v.price</td>
+            <td>@v.total_price_per_item</td>
+        </tr>
+    }
+
+</table>

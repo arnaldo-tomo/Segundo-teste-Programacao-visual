@@ -1,0 +1,347 @@
+﻿@model dynamic
+
+
+@{
+    ViewBag.Title = "Item_Stock";
+}
+<script>
+    $(document).ready(function () {
+        var id = $("#invoice_no").val();
+        var invo = parseInt(id) +111;
+        var datat = "invo=" + invo;
+       // alert(invo);
+        document.getElementById("invoice_no").value = invo;
+        $.ajax({
+            type: "post",
+            url: "Item_Stock",
+            async:false,
+            data: datat,
+            success:function($dd)
+            {
+                ///$("#view_added_item").html($dd);
+            }
+            
+        });
+        
+    });
+</script>
+<script>
+    $(document).ready(function () {
+       
+            var id = $("#invoice_no").val();
+           // alert(id);
+            var alldata = "id=" + id;
+            //alert(alldata);
+            $.ajax({
+                type: "POST",
+                url: "Total_Order_Price",
+                async: false,
+                data: alldata,
+
+                success: function ($dat) {
+                    //alert($data)
+                    //var pr = $data;
+                   // alert($dat)
+                   // document.getElementById("t").value = $dat;
+                   // document.getElementById("sum").value = $dat;
+
+                }
+            });
+        
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#itemname").change(function () {
+            var id = $("#itemname").val();
+            //alert(id);
+            var alldata = "id=" + id;
+            
+            $.ajax({
+                type: "POST",
+                url: "GetPrice",
+                async: false,
+                data: alldata,
+                
+                success: function($data)
+                {
+                    //alert($data)
+                    //var pr = $data;
+                    //alert(pr)
+                    document.getElementById("p").value = $data;
+
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#add_stock_item").click(function () {
+            var sum = null;
+
+            var id = "1";
+            var invoice_no = $("#invoice_no").val();
+            var bill_date = $("#bill_date").val();
+            var supplier_name = $("#supplier_name").val();
+            var receiving_date = $("#receiving_date").val();
+            var carrying_charge = $("#carrying_charge").val();
+            var itemname = $("#itemname").val();
+            var quantity = $("#quantity").val();
+            var p = $("#p").val();
+            var total_price_per_item = $("#total_price_per_item").val();
+            var total_amount = $("#total_amount").val();
+            var data = "id=" + invoice_no;
+
+           
+           // alert(data);
+            var stock_item = "id="+id+"&invoice_no=" + invoice_no + "&bill_date=" + bill_date + "&supplier_name=" + supplier_name + "&receiveing_date="+ receiving_date + "&carrying_charge=" + carrying_charge + "&item_name=" + itemname + "&quantity=" + quantity + "&price=" + p + "&total_price_per_item=" + total_price_per_item + "&total_amount=" + total_amount;
+            //alert(stock_item);
+            $.ajax({
+                type: "POST",
+                url: "Save_New_Order",
+                data: stock_item,
+                async: false,
+                success:function($show_datas)
+                {
+                    //window.location.reload();
+                    //alert($show_datas)
+                    $("#view_added_item").html($show_datas);
+                   // document.getElementById("data_in_item").style.display = "none";
+
+                }
+            });
+
+            $.ajax({
+                type: "POST",
+                url: "Total_Order_Price",
+                data: data,
+                async: false,
+                success: function ($yo) {
+                   // window.location.reload();
+                    //alert($show_datas)
+                   // alert("sum is working");
+                    // $("#view_added_item").html($yo);
+                    
+                    var sum = document.getElementById("sum").value = $yo;
+                   
+
+                }
+            });
+            $.ajax({
+                type: "POST",
+                url: "Carry_Charge",
+                data: data,
+                async: false,
+                success: function ($yo) {
+                    // window.location.reload();
+                    //alert($show_datas)
+                    // alert("sum is working");
+                    // $("#view_added_item").html($yo);
+                    
+                    var ccc = document.getElementById("carry_charge").value = $yo;
+                   
+
+                }
+            });
+
+            var sum_text = $("#sum").val();
+           // alert(sum_text);
+            var carry_ch = $("#carry_charge").val();
+           // alert(carry_ch);
+            var tota = parseInt(sum_text) + parseInt(carry_ch);
+           // alert(tota);
+            document.getElementById("dammy_sum").value = tota;
+
+        });
+    });
+
+</script>
+<script>
+    //$(document).ready(function () {
+    //    $("#Save_Stock").click(function () {
+    //        var inv = $("#invoice_no").val();
+    //        var inv_no = parseInt(inv) + 1;
+    //        alert(inv_no);
+    //        document.getElementById("invoice_no").value = inv_no;
+    //        alert("hide");
+    //    });
+    //});
+</script>
+<h2>Item_Stock</h2>
+@*this form only send the invoice no and totalamount to controller to save it the rest is saved through ajax*@ 
+<form method="post" action="Final_Submit_Order">
+    <div class="row">
+        <h3>Order Details</h3>
+        <div class="col-sm-3">
+            <p>Invoice No</p><input type="text" name="invoice_no" value="@foreach (var m in Model.invoice_4m_total) { @m.invoice_no_t}" id="invoice_no" class="form-control" />
+        </div>
+        <div class="col-sm-3">
+            <p>Bill Date</p><input type="date" name="billdate" id="bill_date" class="form-control" />
+        </div>
+        <div class="col-sm-3">
+            <p>Supplier Name</p>
+            <select class="form-control" name="supplier_name" id="supplier_name">
+                @foreach (var sup in Model.supplier_data)
+                {
+                    <option>@sup.sup_name</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Receive Date</p><input type="date" name="receiving_date" id="receiving_date" class="form-control" />
+        </div>
+        <div class="col-sm-3">
+            <p>Carring Charge</p><input type="text" name="carrying_charge" id="carrying_charge" class="form-control" />
+        </div>
+
+    </div>
+    <div class="row">
+        <h3>Order Items</h3>
+        <div class="col-sm-3">
+            <p>Item Name</p>
+            <select name="item" id="itemname" onchange="item()" class="form-control">
+                @foreach (var it in Model.item_data)
+                {
+                    <option value="@it.item_name">@it.item_name</option>
+                }
+            </select>
+        </div>
+        <script>
+            function calculate() {
+                var q = $("#quantity").val();
+                var p = $("#p").val();
+                var pp = parseInt(p);
+                var cc = $("#carrying_charge").val();
+                //alert(q);
+                //alert(pp);
+                var total_q_p = parseInt(q) * pp;
+                var total = total_q_p;
+                document.getElementById("total_price_per_item").value = total;
+
+            }
+
+
+        </script>
+        <div class="col-sm-2">
+            <p>Quantity</p><input type="text" onkeyup="calculate()" name="quantity" id="quantity" class="form-control" />
+        </div>
+        <div class="col-sm-2">
+            <p>Price </p><input type="text" name="price" id="p" class="form-control" />
+
+        </div>
+        <div class="col-sm-2">
+            <p>Total</p><input type="text" class="form-control" id="total_price_per_item" name="total_price_per_item" />
+            <input type="text" class="form-control" style="display:none" id="total_amount" value="0" name="total_amount" />
+        </div>
+        <div class="col-sm-3">
+            <button type="button" onclick="show_sum()" name="add_stock_item" id="add_stock_item" class="btn btn-success">Add Item</button>
+        </div>
+    </div>
+    <br />
+    <div class="row" id="view_added_item">
+        <table class="table">
+                <tr style="background-color:#fb6d6d">
+                    <th>sr.no</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                </tr>
+                @{ int sr = 1;}
+                @foreach (var m_all in Model.myst_all_data)
+                {
+
+                    <tr>
+                        <td>@sr</td>
+                        <td>@m_all.item_name</td>
+                        <td>@m_all.quantity</td>
+                        <td>@m_all.total_price_per_item</td>
+                        <td><button type="button" onclick="deletedata(@m_all.id)">Delete</button></td>
+                    </tr>
+                    @(sr += 1)
+                }
+
+            </table>
+
+    </div>
+
+    <script>
+    function deletedata(id)
+    {
+        alert(id);
+       // alert(price);
+        var conf = confirm("Are you sure");
+        if(conf==true)
+        {
+            $.ajax({
+                url: "Delete_Item",
+                type: 'POST',
+                data: { id: id },
+
+                success: function ($data) {
+                    window.location.href="Item_Stock";
+                }
+            });
+
+        }
+    }
+    </script>
+     <script>
+         function show_sum() {
+             //var aaaa = $("#sum").val();
+             //alert(aaaa)
+
+             //var sum_text = $("#sum").val();
+             //alert(sum_text);
+             //var carry_ch = $("#carry_charge").val();
+             //alert(carry_ch);
+             //var tota =parseInt( sum_text) + parseInt( carry_ch);
+             //alert(tota);
+             //document.getElementById("dammy_sum").value = tota;
+         }
+     </script>
+    <div class="row" id="">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <h3>Total Amount</h3><br /><input type="text" class="form-control" id="sum" style="display:none" name="total_amunt_t" />
+            <input type="text" class="form-control" id="carry_charge" style="display:none" name="carry_charge" />
+            <input type="text" class="form-control"  id="dammy_sum" name="total_amount_t" />
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+
+        <br />
+        <center><button type="submit" onclik="save_stock()" class="btn btn-info" id="Save_Stock">Save Stock</button></center>
+    </div>
+</form>
+
+<script>
+    //$(document).ready(function () {
+    //    $("#Save_Stock").click(function () {
+    //       // alert("work");
+    //        var invoice = $("#invoice_no").val();
+    //        var total = $("#sum").val();
+    //        alert(invoice);
+    //        alert(total);
+    //        var data = "invoice_no=" + invoice+"&total_amount="+total;
+    //        alert(data);
+    //        $.ajax({
+    //            type: "post",
+    //            url: "Final_Submit_Order",
+    //            data: data,
+    //            success:function()
+    //            {
+    //                window.location.href = "Final_Submit_Order";
+    //            }
+    //        });
+            
+    //    });
+    //});
+</script>
+
+

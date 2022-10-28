@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Inventory.Models.MyStock>
+@{
+    Layout = null;
+}
+
+<script>
+    function deletedata(id,invoice)
+    {
+        alert(id);
+        var conf = confirm("Are you sure");
+        if(conf==true)
+        {
+            $.ajax({
+                url: "Delete_Item",
+                type: 'POST',
+                data: { id: id },
+
+                success: function ($data) {
+                    $("#show").html($data);
+                }
+            });
+            $.ajax({
+                url: "Show_After_Delete",
+                type: 'POST',
+                data: { invoice: invoice },
+
+                success: function ($data) {
+                    $("#show").html($data);
+                }
+            });
+        }
+    }
+</script>
+
+<table class="table">
+    <tr style="background-color:#fb6d6d">
+        <th>sr.no</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+        <th>Action</th>
+    </tr>
+
+
+    @{ int sr = 1;}
+    @foreach (var m in Model)
+    {
+
+        <tr>
+            <td>@sr</td>
+            <td>@m.item_name</td>
+            <td>@m.quantity</td>
+            <td>@m.total_price_per_item</td>
+
+            <td><button type="button" onclick="deletedata(@m.id,@m.invoice)">Delete</button></td>
+        </tr>
+                @(sr += 1)
+    }
+
+</table><br />
+@*<div class="row" id="data_in_save">
+       <div class="col-sm-4"></div>
+        <div class="col-sm-4"><h3>Total Amount</h3><br /><input type="text" value="@Model.Sum(i=>i.total_price_per_item)" class="form-control" id="ts" name="total_amount" /></div>
+        <div class="col-sm-4"></div>
+    </div>*@
+
+<div id="show">
+
+
+</div>

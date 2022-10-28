@@ -1,0 +1,102 @@
+﻿@model IEnumerable<Inventory.Models.MyStock>
+@{
+    Layout = null;
+}
+
+                    <script>
+                        $(document).ready(function () {
+                            var s = $("#stored_bill_date").val();
+                            var t = $("#stored_supplier_name").val();
+                            var u = $("#stored_carrying_charge").val();
+                            var v = $("#stored_receive_date").val();
+
+                            //alert(s);
+                            //alert(t);
+                            //alert(u);
+                            //alert(v);
+                            //document.getElementById("bill_date").value = s;
+                            //this is for showing pre. stored bill date because it was quite difficult to show the date in input type="date"
+                            var date = new Date(s);
+                            var day = date.getDate();
+                            var month = date.getMonth() + 1;
+                            var year = date.getFullYear();
+
+                            if (month < 10) month = "0" + month;
+                            if (day < 10) day = "0" + day;
+
+                            var today = year + "-" + month + "-" + day;
+                            $("#bill_date").attr("value", today);
+
+
+                            //this is for showing pre. stored recieving date because it was quite difficult to show the date in input type="date"
+
+                            var date = new Date(v);
+                            var day = date.getDate();
+                            var month = date.getMonth() + 1;
+                            var year = date.getFullYear();
+
+                            if (month < 10) month = "0" + month;
+                            if (day < 10) day = "0" + day;
+
+                            var today = year + "-" + month + "-" + day;
+                            $("#receiving_date").attr("value", today);
+                            
+                            document.getElementById("supplier_name").value = t;
+                            document.getElementById("carrying_charge").value = u;
+
+                          
+                            
+                        });
+                    </script>
+                    <script>
+                        $(document).ready(function(){
+                            var kk = $("#carrying_charge").val();
+                            if(kk=="undefined")
+                            {
+                                document.getElementById("carrying_charge").value = "";
+                            }
+                        });
+                    </script>
+<table class="table">
+    <tr style="background-color:#fb6d6d">
+        <th>sr.no</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+        <th>Action</th>
+    </tr>
+
+
+    @{ int sr = 0;}
+    @foreach (var m in Model)
+    {
+
+        <tr>
+            <td>@(sr += 1)</td>
+            <td>@m.item_name</td>
+            <td>@m.quantity</td>
+            <td>@m.total_price_per_item</td>
+
+            <td><button type="button" onclick="deleteda(@m.total_amount,@m.invoice,@m.quantity,@m.id,@m.total_price_per_item)">Delete</button></td>
+            <input type="text" hidden id="stored_bill_date" value="@m.bill_date" />
+            <input type="text" hidden id="stored_supplier_name" value="@m.supplier_name" />
+            <input type="text" hidden id="stored_carrying_charge" value="@m.carrying_charge" />
+            <input type="text" hidden id="stored_receive_date" value="@m.receive_date" />
+
+            <input type="text" hidden id="stored_total_price_per_item[]" value="@m.total_price_per_item" />
+
+        </tr>
+
+    }
+
+</table><br />
+@*<div class="row" id="data_in_save">
+       <div class="col-sm-4"></div>
+        <div class="col-sm-4"><h3>Total Amount</h3><br /><input type="text" value="@Model.Sum(i=>i.total_price_per_item)" class="form-control" id="ts" name="total_amount" /></div>
+        <div class="col-sm-4"></div>
+    </div>*@
+
+<div id="show">
+
+
+</div>

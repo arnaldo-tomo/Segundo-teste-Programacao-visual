@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Inventory.Models.MyStock>
+@{
+    Layout = null;
+}
+
+
+
+<table class="table">
+    <tr style="background-color:#fb6d6d">
+        <th>sr.no</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+        <th>Action</th>
+    </tr>
+
+
+    @{ int sr = 0;}
+    @foreach (var m in Model)
+    {
+
+        <tr>
+            <td>@(sr += 1)</td>
+            <td>@m.item_name</td>
+            <td>@m.quantity</td>
+            <td>@m.total_price_per_item</td>
+            <td><button type="button" onclick="deleteda(@m.total_amount,@m.invoice,@m.quantity,@m.id,@m.total_price_per_item)">Delete</button></td>
+        </tr>
+
+    }
+
+</table><br />

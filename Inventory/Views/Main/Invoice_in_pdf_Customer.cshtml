@@ -1,0 +1,58 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "Final_Submit_Order";
+    Layout = null;
+}
+@Styles.Render("~/Content/css")
+
+<center>
+    <h3>ABC Company</h3>
+    Address:Shop no.:10 Gandhi Nagar, Kanke Road, Ranchi<br />
+    Phone:787037846
+</center>
+
+<table class="table">
+    @foreach (var v in Model.SingleMystock)
+    {
+        <tr>
+            <td>Invoice No.: </td>
+            <td>@v.invoice</td>
+        </tr>
+        <tr>
+            <td>Bill Date: </td>
+            <td>@v.bill_date</td>
+        </tr>
+        <tr>
+            <td>Customer Name: </td>
+            <td>@v.customer_name</td>
+        </tr>
+       
+    }
+</table>
+<table class="table">
+    <tr>
+        <th>Item Name</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Amount</th>
+
+    </tr>
+    @foreach (var m in Model.items)
+    {
+        <tr>
+            <td>@m.item_name</td>
+            <td>@m.quantity</td>
+            <td>@m.price</td>
+            <td>@m.total_price_per_item</td>
+        </tr>
+    }
+</table>
+
+@foreach (var t in Model.total)
+{
+
+    <h3>Total Amount: @t.total_order_amount</h3><br />
+
+}
+
+

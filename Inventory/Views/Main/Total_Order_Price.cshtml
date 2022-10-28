@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Inventory.Models.MyStock>
+@{
+    Layout = null;
+}
+
+@foreach (var v in Model)
+{
+    
+}
+@Model.Sum(i => i.total_price_per_item)

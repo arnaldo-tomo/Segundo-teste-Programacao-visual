@@ -1,0 +1,32 @@
+﻿@model Inventory.Models.Item
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+<h3 style="color:#ef2222">Are you sure you want to delete this?</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>Student Details</h4>
+            <table class="table">
+                <tr>
+                    <td>Name</td>
+                    <td>@Model.item_name</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>@Html.DisplayFor(Model => Model.price)</td>
+                </tr>
+                <tr>
+                    <td><a href="/Main/Delete_Confirmed?id=@Model.item_id"><input type="button" class="btn btn-danger" value="Delete Confirmed"></a></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
+   
+    
+   
+

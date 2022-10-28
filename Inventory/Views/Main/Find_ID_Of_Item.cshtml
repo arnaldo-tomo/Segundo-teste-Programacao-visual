@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Inventory.Models.Item>
+@{
+    Layout = null;
+}
+
+@foreach(var v in Model)
+{
+    @v.item_id
+}

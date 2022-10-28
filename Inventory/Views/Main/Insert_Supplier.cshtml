@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Inventory.Models.Suppliers>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Insert_Supplier</title>
+</head>
+<body>
+    <div> 
+        <table class="table">
+            <tr>
+                <th>Sup id</th>
+                <th>Sup Name</th>
+                <th>Sup Contact</th>
+                <th>Sup Email</th>
+                <th>Sup Address</th>
+                <th>Action</th>
+            </tr>
+            @foreach (var v in Model)
+            {
+                <tr>
+                    <td>@v.sup_id</td>
+                    <td>@v.sup_name</td>
+                    <td>@v.mobile</td>
+                    <td>@v.email</td>
+                    <td>@v.address</td>
+                    <td><a href="/Main/Delete_Supplier?id=@v.sup_id"><i class="glyphicon glyphicon-trash"></i></a></td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

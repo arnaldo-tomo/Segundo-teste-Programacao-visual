@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Inventory.Models.Item>
+@{
+    Layout = null;
+}
+
+
+        @foreach(var a in Model)
+        {
+            @a.price
+        }
+   

@@ -1,0 +1,65 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "Final_Submit_Order";
+}
+
+<center><h3>@ViewBag.status</h3></center><br />
+<center>
+    <h3>ABC Company</h3>
+    Address:Gandhi Nagar, Kanke Road, Ranchi<br />
+    Phone:787037846
+</center>
+
+<table class="table">
+    @foreach (var v in Model.SingleMystock)
+    {
+        <tr>
+            <td>Invoice No.: </td>
+            <td>@v.invoice</td>
+        </tr>
+        <tr>
+            <td>Bill Date: </td>
+            <td>@v.bill_date</td>
+        </tr>
+        <tr>
+            <td>Supplier Name: </td>
+            <td>@v.supplier_name</td>
+        </tr>
+        <tr>
+            <td>Reciever Date: </td>
+            <td>@v.receive_date</td>
+        </tr>
+        <tr>
+            <td>Carry Charge: </td>
+            <td>@v.carrying_charge</td>
+        </tr>
+    }
+</table>
+<table class="table">
+    <tr>
+        <th>Item Name</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Amount</th>
+
+    </tr>
+    @foreach (var m in Model.items)
+    {
+        <tr>
+            <td>@m.item_name</td>
+            <td>@m.quantity</td>
+            <td>@m.price</td>
+            <td>@m.total_price_per_item</td>
+        </tr>
+    }
+</table>
+
+@foreach (var t in Model.total)
+{
+
+    <h3>Total Amount: @t.total_order_amount</h3><br />
+    <a href="PrintAll?a=@t.invoice_no_t" target="_blank"><input type="button" class="btn btn-primary" value="Generate PDF"></a>
+    <a href="Item_Stock"><input type="button" class="btn btn-primary" value="New Order"></a>
+}
+
+

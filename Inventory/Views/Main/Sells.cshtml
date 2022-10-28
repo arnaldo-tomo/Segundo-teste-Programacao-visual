@@ -1,0 +1,739 @@
+﻿@model dynamic
+@{
+    Layout = null;
+}
+@if (Session["email"] == null)
+{
+    <script> location.href='/'; </script>
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Inventory</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="~/vendors/css/vendor.bundle.addons.css">
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="~/css/styles.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="~/images/favicon.png" />
+</head>
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+                <a class="navbar-brand brand-logo" href="/Main/Index">
+                    <img src="~/images/logo.svg" alt="logo" />
+                </a>
+                <a class="navbar-brand brand-logo-mini" href="/Main/Index">
+                    <img src="~/images/logo-mini.svg" alt="logo" />
+                </a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center">
+                <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Schedule
+                            <span class="badge badge-primary ml-1">New</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            <i class="mdi mdi-elevation-rise"></i>Reports
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="mdi mdi-bookmark-plus-outline"></i>Score
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                            <i class="mdi mdi-file-document-box"></i>
+                            <span class="count">7</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                            <div class="dropdown-item">
+                                <p class="mb-0 font-weight-normal float-left">
+                                    You have 7 unread mails
+                                </p>
+                                <span class="badge badge-info badge-pill float-right">View all</span>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="~/images/faces/face4.jpg" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-medium text-dark">
+                                        David Grey
+                                        <span class="float-right font-weight-light small-text">1 Minutes ago</span>
+                                    </h6>
+                                    <p class="font-weight-light small-text">
+                                        The meeting is cancelled
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="~/images/faces/face2.jpg" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-medium text-dark">
+                                        Tim Cook
+                                        <span class="float-right font-weight-light small-text">15 Minutes ago</span>
+                                    </h6>
+                                    <p class="font-weight-light small-text">
+                                        New product launch
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="~/images/faces/face3.jpg" alt="image" class="profile-pic">
+                                </div>
+                                <div class="preview-item-content flex-grow">
+                                    <h6 class="preview-subject ellipsis font-weight-medium text-dark">
+                                        Johnson
+                                        <span class="float-right font-weight-light small-text">18 Minutes ago</span>
+                                    </h6>
+                                    <p class="font-weight-light small-text">
+                                        Upcoming board meeting
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                            <i class="mdi mdi-bell"></i>
+                            <span class="count">4</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                            <a class="dropdown-item">
+                                <p class="mb-0 font-weight-normal float-left">
+                                    You have 4 new notifications
+                                </p>
+                                <span class="badge badge-pill badge-warning float-right">View all</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-success">
+                                        <i class="mdi mdi-alert-circle-outline mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-medium text-dark">Application Error</h6>
+                                    <p class="font-weight-light small-text">
+                                        Just now
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-warning">
+                                        <i class="mdi mdi-comment-text-outline mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-medium text-dark">Settings</h6>
+                                    <p class="font-weight-light small-text">
+                                        Private message
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-info">
+                                        <i class="mdi mdi-email-outline mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-medium text-dark">New user registration</h6>
+                                    <p class="font-weight-light small-text">
+                                        2 days ago
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-none d-xl-inline-block">
+                        <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                            <span class="profile-text">Suraj Kumar Soren</span>
+                            <img class="img-xs rounded-circle" src="~/images/faces/face1.jpg" alt="Profile image">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                            <a class="dropdown-item p-0">
+                                <div class="d-flex border-bottom">
+                                    <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                                        <i class="mdi mdi-bookmark-plus-outline mr-0 text-gray"></i>
+                                    </div>
+                                    <div class="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
+                                        <i class="mdi mdi-account-outline mr-0 text-gray"></i>
+                                    </div>
+                                    <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                                        <i class="mdi mdi-alarm-check mr-0 text-gray"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item mt-2">
+                                Manage Accounts
+                            </a>
+                            <a class="dropdown-item">
+                                Change Password
+                            </a>
+                            <a class="dropdown-item">
+                                Check Inbox
+                            </a>
+                            <a class="dropdown-item">
+                                Sign Out
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item nav-profile">
+                        <div class="nav-link">
+                            <div class="user-wrapper">
+                                <div class="profile-image">
+                                    <img src="~/images/faces/face1.jpg" alt="profile image">
+                                </div>
+                                <div class="text-wrapper">
+                                    <p class="profile-name">Suraj Kr Soren</p>
+                                    <div>
+                                        <small class="designation text-muted">Manager</small>
+                                        <span class="status-indicator online"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-success btn-block">
+                                New Project
+                                <i class="mdi mdi-plus"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Main/Index">
+                            <i class="menu-icon mdi mdi-television"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/main/PurchaseItems">
+                            <i class="menu-icon mdi mdi-backup-restore"></i>
+                            <span class="menu-title">Purchase Item</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Main/Additem">
+                            <i class="menu-icon mdi mdi-chart-line"></i>
+                            <span class="menu-title">Add Items</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Main/Sells">
+                            <i class="menu-icon mdi mdi-table"></i>
+                            <span class="menu-title">Sell Item</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/main/AddSupplier">
+                            <i class="menu-icon mdi mdi-sticker"></i>
+                            <span class="menu-title">Add Suppliers</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/main/mystock">
+                            <i class="menu-icon mdi mdi-sticker"></i>
+                            <span class="menu-title">My Stocks</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                            <i class="menu-icon mdi mdi-restart"></i>
+                            <span class="menu-title">User Pages</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="auth">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/samples/login.html"> Login </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/samples/register.html"> Register </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/samples/error-404.html"> 404 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/samples/error-500.html"> 500 </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper" style="background-color:#bbb9b9">
+                    <script>
+                        $(document).ready(function () {
+                            var id = $("#invoice_no").val();
+                            if (id == "")
+                            {
+                                document.getElementById("invoice_no").value = "20181001";
+                            }
+                            else
+                            {
+                                var invo = parseInt(id) + 1;
+                                var datat = "invo=" + invo;
+                                // alert(invo);
+
+                                document.getElementById("invoice_no").value = invo;
+                            }
+
+                            //$.ajax({
+                            //    type: "post",
+                            //    url: "Item_Stock",
+                            //    async:false,
+                            //    data: datat,
+                            //    success:function($dd)
+                            //    {
+                            //        ///$("#view_added_item").html($dd);
+                            //    }
+
+                            //});
+
+                        });
+                    </script>
+                    <script>
+                        $(document).ready(function () {
+
+                                var id = $("#invoice_no").val();
+                               // alert(id);
+                                var alldata = "id=" + id;
+                                //alert(alldata);
+                                $.ajax({
+                                    type: "POST",
+                                    url: "Total_Order_Price",
+                                    async: false,
+                                    data: alldata,
+
+                                    success: function ($dat) {
+                                        //alert($data)
+                                        //var pr = $data;
+                                       // alert($dat)
+                                       // document.getElementById("t").value = $dat;
+                                       // document.getElementById("sum").value = $dat;
+
+                                    }
+                                });
+
+                        });
+                    </script>
+                    <script>
+                        $(document).ready(function () {
+                            $("#itemname").change(function () {
+                                var id = $("#itemname").val();
+                                //alert(id);
+                                var alldata = "id=" + id;
+
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: "GetPrice",
+                                    async: false,
+                                    data: alldata,
+
+                                    success: function($data)
+                                    {
+                                        //alert($data)
+                                        //var pr = $data;
+                                        //alert(pr)
+                                        document.getElementById("p").value = $data;
+
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+
+                    <script>
+                        $(document).ready(function () {
+                            $("#add_stock_item").click(function () {
+                                var sum = null;
+
+                                var id = "1";
+                                var invoice_no = $("#invoice_no").val();
+                                var bill_date = $("#bill_date").val();
+                                var customer_name = $("#customer_name").val();
+                               
+                                var itemname = $("#itemname").val();
+                                var quantity = $("#quantity").val();
+                                var p = $("#p").val();
+                                var total_price_per_item = $("#total_price_per_item").val();
+                                var total_amount = $("#item_idd").val();
+                                var current_date=$("#current_date").val();
+                                var data = "id=" + invoice_no;
+
+
+
+                               // alert(data);
+                                var stock_item = "id=" + id + "&invoice_no=" + invoice_no + "&bill_date=" + bill_date + "&customer_name=" + customer_name +  "&item_name=" + itemname + "&quantity=" + quantity + "&price=" + p + "&total_price_per_item=" + total_price_per_item + "&total_amount=" + total_amount+ "&current_date="+ current_date;
+                                //alert(stock_item);
+                                $.ajax({
+                                    type: "POST",
+                                    url: "Save_Customer_Order",
+                                    data: stock_item,
+                                    async: false,
+                                    success:function($show_datas)
+                                    {
+                                        //window.location.reload();
+                                        //alert($show_datas)
+                                        $("#view_added_item").html($show_datas);
+                                       // document.getElementById("data_in_item").style.display = "none";
+
+                                    }
+                                });
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: "Total_Customer_Order_Price",
+                                    data: data,
+                                    async: false,
+                                    success: function ($yo) {
+                                       // window.location.reload();
+                                        //alert($show_datas)
+                                       // alert("sum is working");
+                                        // $("#view_added_item").html($yo);
+
+                                        var sum = document.getElementById("sum").value = $yo;
+
+
+                                    }
+                                });
+                                //$.ajax({
+                                //    type: "POST",
+                                //    url: "Carry_Charge",
+                                //    data: data,
+                                //    async: false,
+                                //    success: function ($yo) {
+                                //        // window.location.reload();
+                                //        //alert($show_datas)
+                                //        // alert("sum is working");
+                                //        // $("#view_added_item").html($yo);
+
+                                //        var ccc = document.getElementById("carry_charge").value = $yo;
+
+
+                                //    }
+                                //});
+
+                                var sum_text = $("#sum").val();
+                               // alert(sum_text);
+                                
+                               // alert(carry_ch);
+                                var tota = sum_text;
+                               // alert(tota);
+                                document.getElementById("dammy_sum").value = tota;
+
+                            });
+                        });
+
+                    </script>
+                    <script>
+                        //$(document).ready(function () {
+                        //    $("#Save_Stock").click(function () {
+                        //        var inv = $("#invoice_no").val();
+                        //        var inv_no = parseInt(inv) + 1;
+                        //        alert(inv_no);
+                        //        document.getElementById("invoice_no").value = inv_no;
+                        //        alert("hide");
+                        //    });
+                        //});
+                    </script>
+                    <h2>Customer Order</h2>
+                    @*this form only send the invoice no and totalamount to controller to save it the rest is saved through ajax*@
+                    <form method="post" action="Final_Customer_Order">
+                        <div class="row">
+                            @*<h3>Order Details</h3>*@
+                            <div class="col-sm-3">
+                                <p>Invoice No</p><input type="text" name="invoice_no" value="@foreach (var m in Model.invoice_4m_total) { @m.invoice_no_tc}" id="invoice_no" class="form-control" />
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Bill Date</p><input type="text" value="@DateTime.Now.ToString("dd/MM/yyyy HH:mm:tt")" name="billdate" id="bill_date" class="form-control" />
+                                <input type="text" style="display:none" name="current_date" id="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Customer Name</p><input type="text" autofocus name="customer_name" id="customer_name" class="form-control" />
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Total Stock</p><input type="text" autofocus name="total_stock" id="total_stock" class="form-control" />
+                            </div>
+
+                        </div>
+                <script>
+                    function find_Item_id()
+                    {
+                        var item_n = $("#itemname").val();
+                       // alert(item_n);
+
+                        $.ajax({
+                            type:"post",
+                            url:"Find_ID_Of_Item",
+                            data:{item_n:item_n},
+                            success:function($k)
+                            {
+                                //alert($k);
+                                document.getElementById("item_idd").value = $k;
+                            }
+                        });
+
+                        $.ajax({
+                            type: "post",
+                            url: "Find_Stock_Of_Item",
+                            data: { item_n: item_n },
+                            success: function ($kk) {
+                                //alert($k);
+                               // alert("cool");
+                                document.getElementById("total_stock").value = $kk;
+                            }
+                        });
+                    }
+                </script>
+                        <div class="row">
+                            @*<h3>Order Items</h3>*@
+                            <div class="col-sm-3">
+                                <p>Item Name</p>
+                                <select name="item" id="itemname" onchange="find_Item_id()" class="form-control">
+                                    @foreach (var it in Model.item_data)
+                                    {
+                                        <option value="@it.item_name">@it.item_name</option>
+                                    }
+                                </select>
+                                <input type="text" style="display:none" id="item_idd" value="" />
+                            </div>
+                            <script>
+                                function calculate() {
+                                    var q = $("#quantity").val();
+                                    var p = $("#p").val();
+                                    var pp = parseInt(p);
+                                    var cc = $("#carrying_charge").val();
+                                    //alert(q);
+                                    //alert(pp);
+                                    var total_q_p = parseInt(q) * pp;
+                                    var total = total_q_p;
+                                    document.getElementById("total_price_per_item").value = total;
+
+                                }
+
+
+                            </script>
+                            <div class="col-sm-2">
+                                <p>Quantity</p><input type="text" onkeyup="calculate()" name="quantity" id="quantity" class="form-control" />
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Price </p><input type="text" name="price" id="p" class="form-control" />
+
+                            </div>
+                            <div class="col-sm-2">
+                               
+                                <p>Total</p><input type="text" class="form-control" id="total_price_per_item" name="total_price_per_item" />
+                                <input type="text" class="form-control" style="display:none" id="total_amount" value="0" name="total_amount" />
+                            </div>
+                            <div class="col-sm-3">
+                                <br /><br />
+                                <button type="button" onclick="show_sum()" style="margin-top:-17px" name="add_stock_item" id="add_stock_item" class="btn btn-success">Add Item</button>
+                            </div>
+                        </div>
+                        <script>
+    function deleteda(id, invoice, quantity, item_id_in_sell, total_price_per_item)
+    {
+       // alert("cool");
+        //alert(id);
+        //alert(invoice);
+        var total_price_per_item = total_price_per_item;
+        var conf = confirm("Are you sure");
+        if(conf==true)
+        {
+            $.ajax({
+                url: "Delete_Customer_Item",
+                type: 'POST',
+                data: { id: id, invoice: invoice, quantity: quantity, item_id_in_sell: item_id_in_sell },
+
+                success: function ($data) {
+                    $("#view_added_item").html($data);
+                }
+            });
+
+            var p_price = $("#dammy_sum").val();
+            var new_price_after_deleting_item = parseInt(p_price) - parseInt(total_price_per_item);
+            document.getElementById("dammy_sum").value = new_price_after_deleting_item;
+
+        }
+    }
+                        </script>
+                        <br />
+                        <div class="row" id="view_added_item">
+                            
+                            <table class="table">
+                                <tr style="background-color:#fb6d6d">
+                                    <th>sr.no</th>
+                                    <th>Item Name</th>
+                                    <th>Quantity</th>
+                                    <th>Amount</th>
+                                    <th>Action</th>
+                                </tr>
+
+
+
+                            </table>
+                        </div>
+
+                        <script>
+                            function deletedata(id) {
+                                //alert(id);
+                                // alert(price);
+                                var conf = confirm("Are you sure");
+                                if (conf == true) {
+                                    $.ajax({
+                                        url: "Delete_Item",
+                                        type: 'POST',
+                                        data: { id: id },
+
+                                        success: function ($data) {
+                                            window.location.href = "PurchaseItems";
+                                        }
+                                    });
+
+                                }
+                            }
+                        </script>
+                        <script>
+                            function show_sum() {
+                                //var aaaa = $("#sum").val();
+                                //alert(aaaa)
+
+                                //var sum_text = $("#sum").val();
+                                //alert(sum_text);
+                                //var carry_ch = $("#carry_charge").val();
+                                //alert(carry_ch);
+                                //var tota =parseInt( sum_text) + parseInt( carry_ch);
+                                //alert(tota);
+                                //document.getElementById("dammy_sum").value = tota;
+                            }
+                        </script>
+                        <div class="row" id="">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-4">
+                                <br />
+                                <h3>Total Amount</h3><input type="text" class="form-control" id="sum" style="display:none" name="total_amunt_t" />
+                                <input type="text" class="form-control" id="carry_charge" style="display:none" name="carry_charge" />
+                                <input type="text" class="form-control" id="dammy_sum" name="total_amount_t" />
+                            </div>
+                            <div class="col-sm-4"></div>
+                        </div>
+                        <div class="row">
+
+
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-4">
+                                <br /><center><button type="submit" style="width:100%" onclik="save_stock()" class="btn btn-info" id="Save_Stock">Save Stock</button></center>
+                            </div>
+                            <div class="col-sm-4"></div>
+                        </div>
+                    </form>
+
+                    <script>
+                        //$(document).ready(function () {
+                        //    $("#Save_Stock").click(function () {
+                        //       // alert("work");
+                        //        var invoice = $("#invoice_no").val();
+                        //        var total = $("#sum").val();
+                        //        alert(invoice);
+                        //        alert(total);
+                        //        var data = "invoice_no=" + invoice+"&total_amount="+total;
+                        //        alert(data);
+                        //        $.ajax({
+                        //            type: "post",
+                        //            url: "Final_Submit_Order",
+                        //            data: data,
+                        //            success:function()
+                        //            {
+                        //                window.location.href = "Final_Submit_Order";
+                        //            }
+                        //        });
+
+                        //    });
+                        //});
+                    </script>
+
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+                <footer class="footer">
+                    <div class="container-fluid clearfix">
+                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">
+                            Copyright © 2018
+                            <a href="http://www.surajkrsoren.tk" target="_blank">Suraj kr soren</a>. All rights reserved.
+                        </span>
+                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+                            Hand-crafted & made with
+                            <i class="mdi mdi-heart text-danger"></i>
+                        </span>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="~/vendors/js/vendor.bundle.base.js"></script>
+    <script src="~/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="~/js/off-canvas.js"></script>
+    <script src="~/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="~/js/dashboard.js"></script>
+    <!-- End custom js for this page-->
+</body>
+</html>
