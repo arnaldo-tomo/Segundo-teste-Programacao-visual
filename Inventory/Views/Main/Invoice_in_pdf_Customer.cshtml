@@ -5,25 +5,28 @@
 }
 @Styles.Render("~/Content/css")
 
-<center>
-    <h3>ABC Company</h3>
-    Address:Shop no.:10 Gandhi Nagar, Kanke Road, Ranchi<br />
-    Phone:787037846
-</center>
+<left>
+                        <td>
+                                Ponta Geia,Rua Correia de brito
+                                <br /> Tell: +258 85 6474 687 / +258 87 6474 687<br />
+                                Email:arnaldotomo@gmail.com<br>
+                                Beira-Sofala
+                            </td>
+                    </left>
 
 <table class="table">
     @foreach (var v in Model.SingleMystock)
     {
         <tr>
-            <td>Invoice No.: </td>
+            <td>Nº da fatura: </td>
             <td>@v.invoice</td>
         </tr>
         <tr>
-            <td>Bill Date: </td>
+            <td>Data da Compra: </td>
             <td>@v.bill_date</td>
         </tr>
         <tr>
-            <td>Customer Name: </td>
+            <td>Nome do cliente: </td>
             <td>@v.customer_name</td>
         </tr>
        
@@ -31,10 +34,10 @@
 </table>
 <table class="table">
     <tr>
-        <th>Item Name</th>
-        <th>Qty</th>
-        <th>Price</th>
-        <th>Amount</th>
+        <th>Produtos</th>
+        <th>Quantidade</th>
+        <th>Preço</th>
+        <th>Quantia</th>
 
     </tr>
     @foreach (var m in Model.items)
@@ -51,7 +54,7 @@
 @foreach (var t in Model.total)
 {
 
-    <h3>Total Amount: @t.total_order_amount</h3><br />
+    <h2><b>VALOR PAGO</b> @t.total_order_amount. Meticais</h2><br />
 
 }
 

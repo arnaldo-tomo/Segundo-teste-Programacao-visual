@@ -355,9 +355,9 @@
                     @foreach (var t in Model.total)
                     {
 
-                        <h3>Total total: @t.total_order_amount</h3><br />
+                        <h3>Valor A Pagar: @t.total_order_amount</h3><br />
                         <a href="PrintAllCustomerDetails?a=@t.invoice_no_tc" target="_blank"><input type="button" class="btn btn-primary" value="Generar PDF"></a>
-                        <a href="Sells"><input type="button" class="btn btn-primary" value="Nova Compra"></a>
+                        <a href="Sells"><input type="button" class="btn btn-primary" value="Nova Venda"></a>
                     }
 
 
