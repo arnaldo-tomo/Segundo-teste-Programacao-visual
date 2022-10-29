@@ -18,7 +18,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Inventory</title>
+    <title>Registar Fornecedor</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="~/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="~/vendors/css/vendor.bundle.base.css">
@@ -122,7 +122,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/Main/AddItem">
                             <i class="menu-icon mdi mdi-chart-line"></i>
-                            <span class="menu-title">Adicionar Produtos</span>
+                            <span class="menu-title">Registar Produtos</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -134,7 +134,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/main/AddSupplier">
                             <i class="menu-icon mdi mdi-sticker"></i>
-                            <span class="menu-title">Adicionar fornecedores</span>
+                            <span class="menu-title">Registar fornecedores</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -176,7 +176,7 @@
         });
     });
                     </script>
-                    <h2>AddSupplier</h2>
+                    <h2>Addicionar Fornecedor</h2>
 
 
                     @ViewBag.status
@@ -184,7 +184,7 @@
                     @ViewData["fail_status"]
                     @ViewBag.delete_status
 
-                    <center><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Supplier</button></center>
+                  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Addicionar Fornecedor</button>
 
                     <div class="modal fade" id="myModal" role="dialog">
                         <div class="modal-dialog">
@@ -192,7 +192,7 @@
                             <!-- Modal content-->
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h4 class="modal-title" style="">Add Supplier</h4>
+                                    <h4 class="modal-title" style="">Registar Fornecedor</h4>
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     
                                 </div>
@@ -201,24 +201,25 @@
                                         <table class="table">
                                             <input type="number" style="display:none" name="sup_id" id="sup_id" value="2" class="form-control" placeholder="Supplier Name" />
                                             <tr>
-                                                <td>Supplier Name</td>
+                                                <td>Nome do fornecedores</td>
                                                 <td><input type="text" name="sup_name" style="border-bottom:2px solid #0094ff " id="sup_name" class="form-control" placeholder="Supplier Name" /></td>
                                             </tr>
                                             <tr>
-                                                <td>Supplier Contact No.</td>
+                                                <td>Numero do Fornecedor.</td>
                                                 <td><input type="number" name="mobile" style="border-bottom:2px solid #0094ff"  id="mobile" class="form-control" placeholder="Supplier Phone" /></td>
                                             </tr>
                                             <tr>
-                                                <td>Supplier's Email</td>
+                                                <td>Email do Fornecedor</td>
                                                 <td><input type="text" name="email" style="border-bottom:2px solid #0094ff"  id="email" class="form-control" placeholder="Supplier Email" /></td>
                                             </tr>
                                             <tr>
-                                                <td>Supplier Address</td>
+                                                <td>Enderenço</td>
                                                 <td><input type="text" name="address" style="border-bottom:2px solid #0094ff"  id="address" class="form-control" placeholder="Supplier Address" /></td>
                                             </tr>
                                             <tr>
-
-                                                <td><input type="button" name="submit" onclick="save()" id="add" class="btn btn-primary" value="Add Supplier" /></td>
+                                                <td>
+                                                <input type="button" name="submit" onclick="save()" id="add" class="btn btn-primary" value="Add Supplier" />
+                                                </td>
                                             </tr>
                                         </table>
                                     </form>
@@ -234,12 +235,12 @@
                     <div id="retrieve_data">
                         <table class="table">
                             <tr>
-                                <th>Sup id</th>
-                                <th>Sup Name</th>
-                                <th>Sup Contact</th>
-                                <th>Sup Email</th>
-                                <th>Sup Address</th>
-                                <th>Action</th>
+                                <th>ID#</th>
+                                <th>Nome</th>
+                                <th>Contacto</th>
+                                <th>Email</th>
+                                <th>Enderenço</th>
+                                <th>Editar/Deletar</th>
                             </tr>
                             @{ var a = 1;}
                             @foreach (var v in Model)
