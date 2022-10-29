@@ -32,6 +32,52 @@
     <link rel="shortcut icon" href="~/images/favicon.png" />
 </head>
 <body>
+<style>
+
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background: #34AF6D;
+  text-align: left;
+  font-weight: bold;
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table tbody tr.active{
+  font-weight: bold;
+  color: #4AD489;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.table button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+}
+</style>
     <div class="container-scroller">
         <!-- partial:partials/_navbar.html -->
          <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -202,23 +248,24 @@
                                             <input type="number" style="display:none" name="sup_id" id="sup_id" value="2" class="form-control" placeholder="Supplier Name" />
                                             <tr>
                                                 <td>Nome do fornecedores</td>
-                                                <td><input type="text" name="sup_name" style="border-bottom:2px solid #0094ff " id="sup_name" class="form-control" placeholder="Supplier Name" /></td>
+                                                <td><input type="text" name="sup_name" style="border-bottom:2px solid #0094ff " id="sup_name" class="form-control" placeholder="Nome do fornecedores" /></td>
                                             </tr>
                                             <tr>
-                                                <td>Numero do Fornecedor.</td>
-                                                <td><input type="number" name="mobile" style="border-bottom:2px solid #0094ff"  id="mobile" class="form-control" placeholder="Supplier Phone" /></td>
+                                                <td>Numero do Fornecedor</td>
+                                                <td><input type="number" name="mobile" style="border-bottom:2px solid #0094ff"  id="mobile" class="form-control" placeholder="Numero do Fornecedor" /></td>
                                             </tr>
                                             <tr>
                                                 <td>Email do Fornecedor</td>
-                                                <td><input type="text" name="email" style="border-bottom:2px solid #0094ff"  id="email" class="form-control" placeholder="Supplier Email" /></td>
+                                                <td><input type="text" name="email" style="border-bottom:2px solid #0094ff"  id="email" class="form-control" placeholder="Email do Fornecedor" /></td>
                                             </tr>
                                             <tr>
                                                 <td>Enderenço</td>
-                                                <td><input type="text" name="address" style="border-bottom:2px solid #0094ff"  id="address" class="form-control" placeholder="Supplier Address" /></td>
+                                                <td><input type="text" name="address" style="border-bottom:2px solid #0094ff"  id="address" class="form-control" placeholder="Enderenço" /></td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                <input type="button" name="submit" onclick="save()" id="add" class="btn btn-primary" value="Add Supplier" />
+                                                <input type="button" name="submit" onclick="save()" id="add" class="btn btn-primary" value="Registar Funcionario" />
+                                                <!-- <input type="button" name="submit" onclick="save()" id="add" class="btn btn-primary" value="Add Supplier" /> -->
                                                 </td>
                                             </tr>
                                         </table>
@@ -234,6 +281,7 @@
 
                     <div id="retrieve_data">
                         <table class="table">
+                        <thead>
                             <tr>
                                 <th>ID#</th>
                                 <th>Nome</th>
@@ -242,6 +290,7 @@
                                 <th>Enderenço</th>
                                 <th>Editar/Deletar</th>
                             </tr>
+                             </thead>
                             @{ var a = 1;}
                             @foreach (var v in Model)
             {
@@ -262,22 +311,7 @@
 
                     </div>
                 </div>
-                <!-- content-wrapper ends -->
-                <!-- partial:partials/_footer.html -->
-                <footer class="footer">
-                    <div class="container-fluid clearfix">
-                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">
-                            Copyright © 2018
-                            <a href="http://www.surajkrsoren.tk" target="_blank">Suraj kr soren</a>. All rights reserved.
-                        </span>
-                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
-                            Hand-crafted & made with
-                            <i class="mdi mdi-heart text-danger"></i>
-                        </span>
-                    </div>
-                </footer>
-                <!-- partial -->
-            </div>
+                        </div>
             <!-- main-panel ends -->
         </div>
         <!-- page-body-wrapper ends -->
