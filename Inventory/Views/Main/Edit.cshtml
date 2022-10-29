@@ -1,22 +1,22 @@
 ﻿@model Inventory.Models.Item
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Editar Produtos";
 }
 
-<h2>Edit Item</h2>
+<h2>Editar Produtos</h2>
 
 <form method="post" action="/Main/Edit">
     <input type="hidden" name="id" value="@Model.item_id" class="form-control"  placeholder="" />
     <table class="table">
 
         <tr>
-            <td><input type="text" name="item_name" value="@Model.item_name" class="form-control" placeholder="Item name" /></td>
+            <td><input type="text" name="item_name" value="@Model.item_name" class="form-control" placeholder="Nome do Produto" /></td>
         </tr>
         <tr>
-            <td><input type="text" name="price" value="@Model.price" class="form-control" placeholder="Price" /></td>
+            <td><input type="text" name="price" value="@Model.price" class="form-control" placeholder="Preco" /></td>
         </tr>
         <tr>
-            <td><button type="submit" name="submit" class="btn btn-primary">Update Item</button></td>
+            <td><button type="submit" name="submit" class="btn btn-primary">Actuliazar Produto</button></td>
         </tr>
     </table>
 </form>
