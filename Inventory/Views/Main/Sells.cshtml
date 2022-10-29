@@ -30,6 +30,52 @@
     <link rel="shortcut icon" href="~/images/favicon.png" />
 </head>
 <body>
+<style>
+
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background: #34AF6D;
+  text-align: left;
+  font-weight: bold;
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table tbody tr.active{
+  font-weight: bold;
+  color: #4AD489;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.table button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+}
+</style>
     <div class="container-scroller">
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -120,7 +166,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/Main/AddItem">
                             <i class="menu-icon mdi mdi-chart-line"></i>
-                            <span class="menu-title">Adicionar Produtos</span>
+                            <span class="menu-title">Registar Produtos</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -132,7 +178,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/main/AddSupplier">
                             <i class="menu-icon mdi mdi-sticker"></i>
-                            <span class="menu-title">Adicionar fornecedores</span>
+                            <span class="menu-title">Registar fornecedores</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -323,23 +369,23 @@
                         //    });
                         //});
                     </script>
-                    <h2>Customer Order</h2>
-                    @*this form only send the invoice no and totalamount to controller to save it the rest is saved through ajax*@
+                    <h2>Vender Produtos</h2>
+                    @*este formulário apenas envie a fatura no e valor total para o controlador para salvá-lo o resto é salvo através do ajax*@
                     <form method="post" action="Final_Customer_Order">
                         <div class="row">
-                            @*<h3>Order Details</h3>*@
+                            @*<h3>Detalhes da venda</h3>*@
                             <div class="col-sm-3">
-                                <p>Invoice No</p><input type="text" name="invoice_no" value="@foreach (var m in Model.invoice_4m_total) { @m.invoice_no_tc}" id="invoice_no" class="form-control" />
+                                <p>Nº da fatura</p><input type="text" name="invoice_no" value="@foreach (var m in Model.invoice_4m_total) { @m.invoice_no_tc}" id="invoice_no" class="form-control" />
                             </div>
-                            <div class="col-sm-2">
-                                <p>Bill Date</p><input type="text" value="@DateTime.Now.ToString("dd/MM/yyyy HH:mm:tt")" name="billdate" id="bill_date" class="form-control" />
+                            <div class="col-sm-3">
+                                <p>Data da compra</p><input type="text" value="@DateTime.Now.ToString("dd/MM/yyyy HH:mm:tt")" name="billdate" id="bill_date" class="form-control" />
                                 <input type="text" style="display:none" name="current_date" id="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />
                             </div>
-                            <div class="col-sm-2">
-                                <p>Customer Name</p><input type="text" autofocus name="customer_name" id="customer_name" class="form-control" />
+                            <div class="col-sm-3">
+                                <p>Nome do Cliente</p><input type="text" autofocus name="customer_name" id="customer_name" class="form-control" />
                             </div>
-                            <div class="col-sm-2">
-                                <p>Total Stock</p><input type="text" autofocus name="total_stock" id="total_stock" class="form-control" />
+                            <div class="col-sm-3">
+                                <p>Total no estouqe</p><input type="text" autofocus name="total_stock" id="total_stock" class="form-control" />
                             </div>
 
                         </div>
@@ -373,9 +419,9 @@
                     }
                 </script>
                         <div class="row">
-                            @*<h3>Order Items</h3>*@
+                            @*<h3>pedido do produto</h3>*@
                             <div class="col-sm-3">
-                                <p>Item Name</p>
+                                <p>Nome do Produtos</p>
                                 <select name="item" id="itemname" onchange="find_Item_id()" class="form-control">
                                     @foreach (var it in Model.item_data)
                                     {
@@ -400,23 +446,22 @@
 
 
                             </script>
-                            <div class="col-sm-2">
-                                <p>Quantity</p><input type="text" onkeyup="calculate()" name="quantity" id="quantity" class="form-control" />
-                            </div>
-                            <div class="col-sm-2">
-                                <p>Price </p><input type="text" name="price" id="p" class="form-control" />
-
-                            </div>
-                            <div class="col-sm-2">
-                               
-                                <p>Total</p><input type="text" class="form-control" id="total_price_per_item" name="total_price_per_item" />
-                                <input type="text" class="form-control" style="display:none" id="total_amount" value="0" name="total_amount" />
+                            <div class="col-sm-3">
+                                <p>Quantidade</p><input type="text" onkeyup="calculate()" name="quantity" id="quantity" placeholder="informe a quantidade" class="form-control" />
                             </div>
                             <div class="col-sm-3">
-                                <br /><br />
-                                <button type="button" onclick="show_sum()" style="margin-top:-17px" name="add_stock_item" id="add_stock_item" class="btn btn-success">Add Item</button>
+                                <p>Preço do produto </p><input type="text" name="price" id="p" class="form-control" />
+
+                            </div>
+                            <div class="col-sm-3">
+                               
+                                <p>Total a pagar</p><input type="text" class="form-control" id="total_price_per_item" name="total_price_per_item" />
+                                <input type="text" class="form-control" style="display:none" id="total_amount" value="0" name="total_amount" />
                             </div>
                         </div>
+                           <br>
+                                <button type="button" onclick="show_sum()" style="margin-top:-17px" name="add_stock_item" id="add_stock_item" class="btn btn-success">Addicionar na carrinha</button>
+                          
                         <script>
     function deleteda(id, invoice, quantity, item_id_in_sell, total_price_per_item)
     {
@@ -448,15 +493,16 @@
                         <div class="row" id="view_added_item">
                             
                             <table class="table">
-                                <tr style="background-color:#fb6d6d">
-                                    <th>sr.no</th>
-                                    <th>Item Name</th>
-                                    <th>Quantity</th>
-                                    <th>Amount</th>
-                                    <th>Action</th>
+                            <thead>
+                                <tr>
+                                    <th>ID#</th>
+                                    <th>Produtos</th>
+                                    <th>Quantidade</th>
+                                    <th>Quantia</th>
+                                    <th>Delete</th>
                                 </tr>
 
-
+<thead>
 
                             </table>
                         </div>
@@ -465,7 +511,7 @@
                             function deletedata(id) {
                                 //alert(id);
                                 // alert(price);
-                                var conf = confirm("Are you sure");
+                                var conf = confirm("Tens Acerteza que desjas eliminar");
                                 if (conf == true) {
                                     $.ajax({
                                         url: "Delete_Item",
@@ -498,7 +544,7 @@
                             <div class="col-sm-4"></div>
                             <div class="col-sm-4">
                                 <br />
-                                <h3>Total Amount</h3><input type="text" class="form-control" id="sum" style="display:none" name="total_amunt_t" />
+                                <h3>Total da Quantia</h3><input type="text" class="form-control" id="sum" style="display:none" name="total_amunt_t" />
                                 <input type="text" class="form-control" id="carry_charge" style="display:none" name="carry_charge" />
                                 <input type="text" class="form-control" id="dammy_sum" name="total_amount_t" />
                             </div>
@@ -509,7 +555,7 @@
 
                             <div class="col-sm-4"></div>
                             <div class="col-sm-4">
-                                <br /><center><button type="submit" style="width:100%" onclik="save_stock()" class="btn btn-info" id="Save_Stock">Save Stock</button></center>
+                                <br /><center><button type="submit" style="width:100%" onclik="save_stock()" class="btn btn-info" id="Save_Stock">Vender</button></center>
                             </div>
                             <div class="col-sm-4"></div>
                         </div>
@@ -540,22 +586,7 @@
                     </script>
 
                 </div>
-                <!-- content-wrapper ends -->
-                <!-- partial:partials/_footer.html -->
-                <footer class="footer">
-                    <div class="container-fluid clearfix">
-                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">
-                            Copyright © 2018
-                            <a href="http://www.surajkrsoren.tk" target="_blank">Suraj kr soren</a>. All rights reserved.
-                        </span>
-                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
-                            Hand-crafted & made with
-                            <i class="mdi mdi-heart text-danger"></i>
-                        </span>
-                    </div>
-                </footer>
-                <!-- partial -->
-            </div>
+                  </div>
             <!-- main-panel ends -->
         </div>
         <!-- page-body-wrapper ends -->
