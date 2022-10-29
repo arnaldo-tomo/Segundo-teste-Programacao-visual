@@ -30,6 +30,53 @@
     <link rel="shortcut icon" href="~/images/favicon.png" />
 </head>
 <body>
+
+<style>
+
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background: #34AF6D;
+  text-align: left;
+  font-weight: bold;
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table tbody tr.active{
+  font-weight: bold;
+  color: #4AD489;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.table button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+}
+</style>
     <div class="container-scroller">
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -452,15 +499,17 @@
                         </div>
                         <br />
                         <div class="row" id="view_added_item">
+                        <!-- <div class="row" id="view_added_item"> -->
                             <table class="table">
-                                <tr style="background-color:#fb6d6d">
-                                    <th>sr.no</th>
+                            <thead>
+                                <tr>
+                                    <th>ID#</th>
                                     <th>Nome do Produtos</th>
                                     <th>Quantidade</th>
                                     <th>Quantia</th>
-                                    <th>Aççao</th>
+                                    <th>Deletar</th>
                                 </tr>
-                               
+                               </thead>
 
                             </table>
 
@@ -476,7 +525,7 @@
                                 //alert(item_id_in_sell)
                                 var total_price_per_item=total_price_per_item;
                                 //alert(total_price_per_item);
-                                var conf = confirm("Are you sure");
+                                var conf = confirm("VOCE TEM A CERTEZA?");
                                 if(conf==true)
                                 {
                                     $.ajax({
@@ -514,7 +563,7 @@
                         <div class="row" id="">
                             <div class="col-sm-4"></div>
                             <div class="col-sm-4">
-                                <h3>Valor total/h3><br /><input type="text" class="form-control" id="sum" style="display:none" name="total_amunt_t" />
+                                <h3>Valor total</h3><br /><input type="text" class="form-control" id="sum" style="display:none" name="total_amunt_t" />
                                 <input type="text" class="form-control" id="carry_charge" style="display:none" name="carry_charge" />
                                 <input type="text" class="form-control" id="dammy_sum" name="total_amount_t" />
                             </div>
