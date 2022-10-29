@@ -3,17 +3,17 @@
     ViewBag.Title = "Delete_Supplier";
 }
 
-<h2>Delete_Supplier</h2>
+<h2>Delatar Fornecedor</h2>
 
 
-<h3 style="color:#ef2222">Are you sure you want to delete this?</h3>
+<h3 style="color:#ef2222">Tens a certeza que desejas Eliminar?</h3>
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <h4>Student Details</h4>
+            <h4> Detalils</h4>
             <table class="table">
                 <tr>
-                    <td>Name</td>
+                    <td>Nome</td>
                     <td>@Model.sup_name</td>
                 </tr>
                 <tr>
@@ -21,15 +21,15 @@
                     <td>@Html.DisplayFor(Model => Model.email)</td>
                 </tr>
                 <tr>
-                    <td>Mobile</td>
+                    <td>Contacto</td>
                     <td>@Html.DisplayFor(Model => Model.mobile)</td>
                 </tr>
                 <tr>
-                    <td>Address</td>
+                    <td>Indereco</td>
                     <td>@Html.DisplayFor(Model => Model.address)</td>
                 </tr>
                 <tr>
-                    <td><a href="/Main/Delete_Supplier_Confirmed?id=@Model.sup_id"><input type="button" class="btn btn-danger" value="Delete Confirmed"></a></td>
+                    <td><a href="/Main/Delete_Supplier_Confirmed?id=@Model.sup_id"><input type="button" class="btn btn-danger" value="Sim!,Deletar"></a></td>
                 </tr>
 
             </table>
