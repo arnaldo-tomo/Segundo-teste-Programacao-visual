@@ -15,7 +15,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>EM Stock</title>
+    <title>EM estouqe</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="~/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="~/vendors/css/vendor.bundle.base.css">
@@ -30,6 +30,52 @@
     <link rel="shortcut icon" href="~/images/favicon.png" />
 </head>
 <body>
+<style>
+
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background: #34AF6D;
+  text-align: left;
+  font-weight: bold;
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table tbody tr.active{
+  font-weight: bold;
+  color: #4AD489;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.table button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+}
+</style>
     <div class="container-scroller">
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -120,7 +166,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/Main/AddItem">
                             <i class="menu-icon mdi mdi-chart-line"></i>
-                            <span class="menu-title">Adicionar Produtos</span>
+                            <span class="menu-title">Registar Produtos</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -132,13 +178,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/main/AddSupplier">
                             <i class="menu-icon mdi mdi-sticker"></i>
-                            <span class="menu-title">Adicionar fornecedores</span>
+                            <span class="menu-title">Registar fornecedores</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/main/mystock">
                             <i class="menu-icon mdi mdi-sticker"></i>
-                            <span class="menu-title">Em Stocks</span>
+                            <span class="menu-title">Em estouqe</span>
                         </a>
                     </li>
                    
@@ -148,11 +194,14 @@
             <div class="main-panel">
                 <div class="content-wrapper">
                     <table class="table">
+            <h2>Produtos em estoque</h2>
+                    <thead>
                         <tr>
-                            <th>sr no.</th>
-                            <th>Item Name</th>
-                            <th>Quantity</th>
+                            <th>ID#</th>
+                            <th>produto</th>
+                            <th>Quantidade</th>
                         </tr>
+                        </thead>
                         @{ var a = 1;}
                         @foreach (var v in Model.items)
                         {
@@ -166,22 +215,7 @@
 
                     @ViewBag.quantity
                 </div>
-                <!-- content-wrapper ends -->
-                <!-- partial:partials/_footer.html -->
-                <footer class="footer">
-                    <div class="container-fluid clearfix">
-                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">
-                            Copyright © 2018
-                            <a href="http://www.surajkrsoren.tk" target="_blank">Suraj kr soren</a>. All rights reserved.
-                        </span>
-                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
-                            Hand-crafted & made with
-                            <i class="mdi mdi-heart text-danger"></i>
-                        </span>
-                    </div>
-                </footer>
-                <!-- partial -->
-            </div>
+                      </div>
             <!-- main-panel ends -->
         </div>
         <!-- page-body-wrapper ends -->
