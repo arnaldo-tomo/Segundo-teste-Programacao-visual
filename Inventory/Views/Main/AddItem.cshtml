@@ -22,7 +22,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Inventory</title>
+    <title>Addicionar Produtos</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="~/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="~/vendors/css/vendor.bundle.base.css">
@@ -36,6 +36,53 @@
     <link rel="shortcut icon" href="~/images/favicon.png" />
 </head>
 <body>
+
+<style>
+
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background: #34AF6D;
+  text-align: left;
+  font-weight: bold;
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table tbody tr.active{
+  font-weight: bold;
+  color: #4AD489;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.table button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+}
+</style>
     <div class="container-scroller">
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -150,36 +197,34 @@
                    
                 </ul>
             </nav>
-            <!-- partial -->
+           
             <div class="main-panel">
                 <div class="content-wrapper">
-                    <h2 style="margin-left:30px">Add Item</h2>
+                    <h2 >Registar Produtos</h2>
                     <form method="post" action="/Main/AddItem">
                         <input type="hidden" name="id" class="form-control" value="1" placeholder="" />
-                        <table class="table">
-
-                            <tr>
-                                <td>Item Name</td>
-                                <td><input type="text" name="item_name" style="margin-left:-50%;border:2px solid #4cff00" class="form-control" placeholder="Item name" /></td>
-                            </tr>
-                            <tr>
-                                <td>Price</td>
-                                <td><input type="text" name="price" style="margin-left:-50%;border:2px solid #4cff00" class="form-control" placeholder="Price" /></td>
-                            </tr>
-                            <tr>
-                                <td><button type="submit" name="submit" class="btn btn-primary">Add Item</button></td>
-                            </tr>
-                        </table>
+                        <div class="">
+                         <label>nome do Produtos</label>
+                        <input type="text" name="item_name"  class="form-control" placeholder="Informe o nome do produto" />
+                        <label>Preço</label>
+                        <input type="text" name="price"  class="form-control" placeholder="informe o preco do produto" />
+                        </div>
+                        <br>
+                         <button type="submit" name="submit" class="btn btn-success">Addicionar Produtos</button>
+                    
                     </form>
-                    <br />
+                   
 
                     <table class="table">
+                    <thead>
                         <tr>
-                            <th>Sr.no</th>
-                            <th>Item</th>
-                            <th>Price</th>
-                            <th>Action</th>
+                            <th>ID#</th>
+                            <th>Produtos</th>
+                            <th>Preço</th>
+                            <th>Editar/Deletar</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         @{ var a = 1;}
                         @foreach (var data in Model)
                         {
@@ -194,41 +239,25 @@
 
                             </tr>
                         }
+                        </tbody>
                     </table>
                 </div>
-                <!-- content-wrapper ends -->
-                <!-- partial:partials/_footer.html -->
-                <footer class="footer">
-                    <div class="container-fluid clearfix">
-                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">
-                            Copyright © 2018
-                            <a href="http://www.surajkrsoren.tk" target="_blank">Suraj kr soren</a>. All rights reserved.
-                        </span>
-                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
-                            Hand-crafted & made with
-                            <i class="mdi mdi-heart text-danger"></i>
-                        </span>
-                    </div>
-                </footer>
-                <!-- partial -->
+          
             </div>
-            <!-- main-panel ends -->
         </div>
-        <!-- page-body-wrapper ends -->
     </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
+ 
     <script src="~/vendors/js/vendor.bundle.base.js"></script>
     <script src="~/vendors/js/vendor.bundle.addons.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page-->
-    <!-- End plugin js for this page-->
-    <!-- inject:js -->
-    <script src="~/js/off-canvas.js"></script>
+     <script src="~/js/off-canvas.js"></script>
     <script src="~/js/misc.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page-->
     <script src="~/js/dashboard.js"></script>
-    <!-- End custom js for this page-->
 </body>
 </html>
+<!-- <label>nome do Produtos</label>
+                               <input type="text" name="item_name" style="margin-left:-50%;border:2px solid #4cff00" class="form-control" placeholder="Informe o nome do produto" />
+                         
+                                <label>Preço</label>
+                                <div><input type="text" name="price" style="margin-left:-50%;border:2px solid #4cff00" class="form-control" placeholder="informe o preco do produto" /></div>
+                         
+                                <div class="group-form"><button type="submit" name="submit" class="btn btn-success">Addicionar Produtos</button></div> -->
