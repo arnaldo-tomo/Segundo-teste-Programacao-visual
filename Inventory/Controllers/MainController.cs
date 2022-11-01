@@ -32,6 +32,7 @@ namespace Inventory.Controllers
             }
             else
             {
+                //caso as credencias n senham semelhante com as na base de dado 
                 Session["error"] = "Email ou senha,Estao errdas!";
                 return RedirectToAction("login");
             }
