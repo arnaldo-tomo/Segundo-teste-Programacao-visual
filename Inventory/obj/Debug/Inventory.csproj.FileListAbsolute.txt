@@ -1,0 +1,263 @@
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\csc.exe
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\System.Collections.Immutable.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\vbc.exe
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\VBCSCompiler.exe
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\roslyn\VBCSCompiler.exe.config
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Inventory.dll.config
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Inventory.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Inventory.pdb
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Antlr3.Runtime.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\EntityFramework.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\EntityFramework.SqlServer.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Google.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Web.Infrastructure.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Newtonsoft.Json.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Owin.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.Helpers.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.Mvc.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.Optimization.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.Razor.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.WebPages.Deployment.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.WebPages.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.WebPages.Razor.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\WebGrease.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.Helpers.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.Mvc.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.Optimization.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.Razor.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.WebPages.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.WebPages.Deployment.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\System.Web.WebPages.Razor.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Antlr3.Runtime.pdb
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Newtonsoft.Json.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\EntityFramework.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\EntityFramework.SqlServer.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Google.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.csprojResolveAssemblyReference.cache
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.dll
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.pdb
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Item.resources
+c:\users\suraj\documents\visual studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.Cache
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Suppliers.resources
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.MyStock.resources
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Total_Stock_Order.resources
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\bin\Rotativa.Core.dll
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\bin\Rotativa.MVC.dll
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\bin\Microsoft.ReportViewer.WebForms.xml
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.MyStockNotification.resources
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.TotalItemsQuantity.resources
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Sell_Item.resources
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Sell_Items_To_Customer.resources
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Sell_Item1.resources
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Sell_Item2.resources
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Total_Customer_Order.resources
+C:\Users\Suraj\Documents\Visual Studio 2015\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.login.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\csc.exe
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\vbc.exe
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\VBCSCompiler.exe
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Inventory.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Inventory.pdb
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Antlr3.Runtime.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\EntityFramework.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\EntityFramework.SqlServer.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Newtonsoft.Json.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Owin.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Rotativa.Core.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Rotativa.MVC.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.Helpers.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.Mvc.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.Optimization.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.Razor.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.WebPages.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.WebPages.Razor.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\WebGrease.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.ReportViewer.WebForms.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.Helpers.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.Mvc.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.Optimization.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.Razor.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.WebPages.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\System.Web.WebPages.Razor.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Antlr3.Runtime.pdb
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Newtonsoft.Json.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\EntityFramework.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\EntityFramework.SqlServer.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Item.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Suppliers.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.MyStock.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Total_Stock_Order.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.MyStockNotification.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.TotalItemsQuantity.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Sell_Item.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Sell_Items_To_Customer.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Sell_Item1.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Sell_Item2.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.Total_Customer_Order.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.Migrations.login.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.Cache
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\bin\Inventory.dll.config
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.csproj.AssemblyReference.cache
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\csc.exe
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\vbc.exe
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\VBCSCompiler.exe
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Inventory.dll.config
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Inventory.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Inventory.pdb
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Antlr3.Runtime.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\EntityFramework.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\EntityFramework.SqlServer.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Newtonsoft.Json.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Owin.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Rotativa.Core.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Rotativa.MVC.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.Helpers.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.Mvc.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.Optimization.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.Razor.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.WebPages.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.WebPages.Razor.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\WebGrease.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.ReportViewer.WebForms.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.Helpers.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.Mvc.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.Optimization.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.Razor.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.WebPages.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\System.Web.WebPages.Razor.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Antlr3.Runtime.pdb
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Newtonsoft.Json.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\EntityFramework.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\EntityFramework.SqlServer.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.csproj.AssemblyReference.cache
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.Item.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.Suppliers.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.MyStock.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.Total_Stock_Order.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.MyStockNotification.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.TotalItemsQuantity.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.Sell_Item.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.Sell_Items_To_Customer.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.Sell_Item1.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.Sell_Item2.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.Total_Customer_Order.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.Migrations.login.resources
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.csproj.CopyComplete
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.dll
+C:\Users\Arnaldo Tomo\Documents\Visual Studio 2012\Projects\Segundo teste Programacao visual\Segundo-teste-Programacao-visual\Inventory\obj\Debug\Inventory.pdb

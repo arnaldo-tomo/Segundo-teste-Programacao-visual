@@ -86,7 +86,7 @@ namespace Inventory.Controllers
             }
             return View();
         }
-        //this is old action method where i was add the items 
+        //este metedo e para casdaetara todos os produtos
         public ActionResult Index2()
         {
             ApplicationDbContext crud = new ApplicationDbContext();
@@ -195,8 +195,8 @@ namespace Inventory.Controllers
             if(res>0)
             {
 
-                ViewData["status"] = "inserted successfully";
-                ViewBag.status = "inserted successfully";
+                ViewData["status"] = "inserido com sucesso";
+                ViewBag.status = "inserido com sucesso";
 
                 //var data = from Suppliers in db.Supplierss select Suppliers;
 
@@ -206,7 +206,7 @@ namespace Inventory.Controllers
             }
             else
             {
-                ViewData["fail_status"] = "failed to insert";
+                ViewData["fail_status"] = "falha ao inserir";
             }
             return RedirectToAction("AddSupplier");
             
@@ -453,7 +453,7 @@ namespace Inventory.Controllers
         {
             //var total = int.Parse(total_amount);
            
-            ViewBag.status = "Items Saved Successfully";
+            ViewBag.status = "Itens salvos com sucesso";
             Total_Stock_Order ts = new Total_Stock_Order();
             ts.invoice_no_t = invoice_no;
             ts.total_order_amount = total_amount_t;
@@ -711,7 +711,7 @@ namespace Inventory.Controllers
         {
             //var total = int.Parse(total_amount);
 
-            ViewBag.status = "Items Saved Successfully";
+            ViewBag.status = "Itens salvos com sucesso";
             Total_Customer_Order ts = new Total_Customer_Order();
             ts.invoice_no_tc = invoice_no;
             ts.total_order_amount = total_amount_t;
