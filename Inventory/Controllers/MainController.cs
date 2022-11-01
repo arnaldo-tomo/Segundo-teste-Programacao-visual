@@ -27,6 +27,7 @@ namespace Inventory.Controllers
             var auth = from login in db.logins.Where(x => x.email == email && x.password == password) select login;
             if (auth.Any())
             {
+                //caso as credencias sejam compativel redecione
                 Session["email"] = email;
                 return RedirectToAction("Index");
             }
