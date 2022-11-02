@@ -388,14 +388,14 @@ table thead tr{
                     <form method="post" action="Final_Submit_Order">
                         <div class="row">
                             @*<h3>detalhes do pedido</h3>*@
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <p>Nº da fatura</p><input type="text" name="invoice_no" value="@foreach (var m in Model.invoice_4m_total) { @m.invoice_no_t}" id="invoice_no" class="form-control" />
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <p>Data da conta</p><input type="date" name="billdate" id="bill_date" class="form-control" />
                                 @*<input type="text" name="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />*@
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <p>Total de Produtos em Estoque</p><input type="text"  name="total_stock" id="total_stock" class="form-control" />
                                 @*<input type="text" name="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />*@
                             </div>
@@ -403,7 +403,7 @@ table thead tr{
 
                         </div>
                         <div class="row" style="background-color:">
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <p>Nome do Fornecedor</p>
                                 <select class="form-control" autofocus name="supplier_name" id="supplier_name">
                                     @foreach (var sup in Model.supplier_data)
@@ -413,7 +413,7 @@ table thead tr{
                                 </select>
                             </div>
 
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <p>Carga de Transporte</p><input type="text" name="carrying_charge" id="carrying_charge" class="form-control" />
                             </div>
                             <div class="col-sm-3">
@@ -489,13 +489,11 @@ table thead tr{
                                 <p>Total</p><input type="text" class="form-control" id="total_price_per_item" name="total_price_per_item" />
                                 <input type="text" class="form-control" style="display:none" id="total_amount" value="0" name="total_amount" />
                             </div>
-                            <div class="col-sm-3">
-                                <br /><br />
-                                <button type="button" onclick="show_sum()" style="margin-top:-17px" name="add_stock_item" id="add_stock_item" class="btn btn-success">Addicionar Produtos</button>
-                            </div>
                         </div>
-                        <br />
-                        <div class="row" id="view_added_item">
+                        <br>
+                            
+                             <button type="button" onclick="show_sum()" style="margin-top:-17px" name="add_stock_item" id="add_stock_item" class="btn btn-success">Addicionar Produtos</button>
+                                               <div class="row" id="view_added_item">
                         <!-- <div class="row" id="view_added_item"> -->
                         <!-- <div class="row" id="view_added_item"> -->
                             <table class="table">
