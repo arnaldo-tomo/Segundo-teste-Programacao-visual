@@ -385,7 +385,7 @@ table thead tr{
                                 <p>Nome do Cliente</p><input type="text" autofocus name="customer_name" id="customer_name" class="form-control" placeholdr="Informe o nome do Clinte" />
                             </div>
                             <div class="col-sm-3">
-                                <p>Total no estouqe</p><input type="text" autofocus name="total_stock" id="total_stock" class="form-control" placeholder="Total Em Estoque" />
+                                <p>Total no Estoque</p><input type="text" autofocus name="total_stock" id="total_stock" class="form-control" placeholder="Total Em Estoque" />
                             </div>
 
                         </div>
@@ -450,7 +450,7 @@ table thead tr{
                                 <p>Quantidade</p><input type="text" onkeyup="calculate()" name="quantity" id="quantity" placeholder="informe a quantidade" class="form-control" />
                             </div>
                             <div class="col-sm-3">
-                                <p>Preço do produto </p><input type="text" name="price" id="p" class="form-control" />
+                                <p>Preço do produto </p><input type="text" name="price" id="p" class="form-control" placeholder="Preç do Produto" />
 
                             </div>
                             <div class="col-sm-3">
@@ -469,7 +469,7 @@ table thead tr{
         //alert(id);
         //alert(invoice);
         var total_price_per_item = total_price_per_item;
-        var conf = confirm("Are you sure");
+        var conf = confirm("Voce Tem a certeza.");
         if(conf==true)
         {
             $.ajax({
@@ -491,8 +491,7 @@ table thead tr{
                         </script>
                         <br />
                         <div class="row" id="view_added_item">
-                            
-                            <table class="table">
+                                                        <table class="table">
                             <thead>
                                 <tr>
                                     <th>ID#</th>

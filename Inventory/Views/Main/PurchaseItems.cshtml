@@ -383,7 +383,7 @@ table thead tr{
                         });
                     </script>
                     
-                                        <h2>Produtos em estouqe</h2>
+                                        <h2>Produtos em Estoque</h2>
                                         @*este formulário apenas envie a fatura no e valor total para o controlador para salvá-lo o resto é salvo através do ajax*@
                     <form method="post" action="Final_Submit_Order">
                         <div class="row">
@@ -396,7 +396,7 @@ table thead tr{
                                 @*<input type="text" name="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />*@
                             </div>
                             <div class="col-sm-3">
-                                <p>Total de Produtos em estouqe</p><input type="text"  name="total_stock" id="total_stock" class="form-control" />
+                                <p>Total de Produtos em Estoque</p><input type="text"  name="total_stock" id="total_stock" class="form-control" />
                                 @*<input type="text" name="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />*@
                             </div>
 
@@ -572,7 +572,7 @@ table thead tr{
 
                             <div class="col-sm-4"></div>
                             <div class="col-sm-4">
-                                <br /><center><button type="submit" style="width:100%" onclik="save_stock()" class="btn btn-info" id="Save_Stock">Guardar em esqoue</button></center>
+                               <button type="submit" style="width:100%" onclik="save_stock()" class="btn btn-info" id="Save_Stock">Guardar em esqoue</button>
                             </div>
                             <div class="col-sm-4"></div>
                         </div>
