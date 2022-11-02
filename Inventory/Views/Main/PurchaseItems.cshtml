@@ -396,7 +396,7 @@ table thead tr{
                                 @*<input type="text" name="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />*@
                             </div>
                             <div class="col-sm-4">
-                                <p>Total de Produtos em Estoque</p><input type="text"  name="total_stock" id="total_stock" class="form-control" />
+                                <p>Total de Produtos em Estoque</p><input type="text"  placeholder="Total de Produto em Estoque" name="total_stock" id="total_stock" class="form-control" />
                                 @*<input type="text" name="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />*@
                             </div>
 
@@ -406,6 +406,7 @@ table thead tr{
                             <div class="col-sm-4">
                                 <p>Nome do Fornecedor</p>
                                 <select class="form-control" autofocus name="supplier_name" id="supplier_name">
+                                        <option selected> --Selecione o Fornecedor-- </option>
                                     @foreach (var sup in Model.supplier_data)
                                     {
                                         <option>@sup.sup_name</option>
@@ -414,9 +415,9 @@ table thead tr{
                             </div>
 
                             <div class="col-sm-4">
-                                <p>Carga de Transporte</p><input type="text" name="carrying_charge" id="carrying_charge" class="form-control" />
+                                <p>Carga de Transporte</p><input type="text" name="carrying_charge" id="carrying_charge" class="form-control" placeholder="Quantidade em Estoque" />
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <p>Data de Recebimento</p><input type="date" name="receiving_date" id="receiving_date" class="form-control" />
                             </div>
 
@@ -452,7 +453,7 @@ table thead tr{
                         </script>
                         <div class="row">
                             @*<h3>Produtos de ordem</h3>*@
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <p>Nome do Produtos</p>
                                 <select name="item" id="itemname" onchange="find_Item_id()" class="form-control">
                                     @foreach (var it in Model.item_data)
@@ -478,11 +479,11 @@ table thead tr{
 
 
                             </script>
-                            <div class="col-sm-2">
-                                <p>Quantidade</p><input type="text" onkeyup="calculate()" name="quantity" id="quantity" class="form-control" />
+                            <div class="col-sm-4">
+                                <p>Quantidade</p><input type="text" onkeyup="calculate()" name="quantity" id="quantity" class="form-control" placeholder="Quantidade do Pruduto" />
                             </div>
                             <div class="col-sm-2">
-                                <p>Preço </p><input type="text" name="price" id="p" class="form-control" />
+                                <p>Preço </p><input type="text" name="price" id="p" class="form-control" placeholder="Preço do Produto" />
 
                             </div>
                             <div class="col-sm-2">
