@@ -63,6 +63,8 @@ namespace Inventory.Controllers
             var data = crud.Items;
             return View(data);
         }
+
+        //Metedo para addcionar produtos na base de dado.
         [HttpPost]
         public ActionResult AddItem(int id, string item_name, float price)
         {
@@ -88,6 +90,7 @@ namespace Inventory.Controllers
             }
             return View();
         }
+
         //este metedo e para casdaetara todos os produtos
         public ActionResult Index2()
         {
@@ -95,6 +98,7 @@ namespace Inventory.Controllers
             var data = crud.Items;
             return View(data);
         }
+
         [HttpPost]
         public ActionResult Index2(int id,string item_name, float price)
         {
