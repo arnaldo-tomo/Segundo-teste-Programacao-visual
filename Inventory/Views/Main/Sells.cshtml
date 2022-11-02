@@ -382,10 +382,10 @@ table thead tr{
                                 <input type="text" style="display:none" name="current_date" id="current_date" value="@DateTime.Now.ToString("dd/MM/yyyy")" />
                             </div>
                             <div class="col-sm-3">
-                                <p>Nome do Cliente</p><input type="text" autofocus name="customer_name" id="customer_name" class="form-control" />
+                                <p>Nome do Cliente</p><input type="text" autofocus name="customer_name" id="customer_name" class="form-control" placeholdr="Informe o nome do Clinte" />
                             </div>
                             <div class="col-sm-3">
-                                <p>Total no estouqe</p><input type="text" autofocus name="total_stock" id="total_stock" class="form-control" />
+                                <p>Total no estouqe</p><input type="text" autofocus name="total_stock" id="total_stock" class="form-control" placeholder="Total Em Estoque" />
                             </div>
 
                         </div>
@@ -555,7 +555,7 @@ table thead tr{
 
                             <div class="col-sm-4"></div>
                             <div class="col-sm-4">
-                                <br /><center><button type="submit" style="width:100%" onclik="save_stock()" class="btn btn-info" id="Save_Stock">Vender</button></center>
+                                <br /><center><button type="submit" style="width:100%" onclik="save_stock()" class="btn btn-success" id="Save_Stock">Vender</button></center>
                             </div>
                             <div class="col-sm-4"></div>
                         </div>
