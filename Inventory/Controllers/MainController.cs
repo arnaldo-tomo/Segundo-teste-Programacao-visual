@@ -16,7 +16,7 @@ namespace Inventory.Controllers
 
        
         public ApplicationDbContext db = new ApplicationDbContext();
-
+///Chmar login na tela
         public ActionResult login()
         {
             return View();
